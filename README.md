@@ -6,7 +6,7 @@ curl \
 --header "Content-Type: application/json" \
 --request POST \
 --data '{"ticker":"MSFT", "days":7}' \
-http:// 3.83.13.181:8000/predict
+http://44.203.201.128:8000/predict
 
 ## Images
 
