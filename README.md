@@ -1,4 +1,4 @@
-# stock-predictor
+# stock-predictor-container-branch
 
 ## Docker build
 
@@ -16,19 +16,15 @@
 ![image](img/gui.png)
 
 ## Canvas Answers
-- How does the Prophet Algorithm differ from an LSTM?
-  - Prophet is a business trends algorithm that aims to combine seasonality, trend, holidays, and error rates in order to make time series predictions. 
-  - LSTMs are a special type of RNN, which is a neural network aimed at predicting sequential data, including timer series.
-- Why does an LSTM have poor performance against ARIMA and Prophet for Time Series?
-  - LSTM is very prone to overfitting with time series data. It also fails to account for things like seasonality.
-- What is exponential smoothing and why is it used in Time Series Forecasting?
-  - Time series models use a weighted sum of past events when making a prediction. Exponential smoothing uses an exponential function to decrease the weight of past events, so that events become less and less relevant over time.
-- What is stationarity? 
-  - A time series without an obvious trend. Meaning there are no seasonal changes evident.
-- What is seasonality? 
-  - Predictible changes in time series data that correlates with certain seasons (i.e. holiday spending increases)
-- Why Is Stationarity Important in Time Series Forecasting?
-  - Because with stationarity, you would want to use different forcasting methods, so as not to change model during seasonal predictions.
-- How is seasonality different from cyclicality? Fill in the blanks:
-___ is predictable, whereas ___ is not.
-  - Seasonality is predicatable, whereas cyclicality is not.
+- What does it mean to create a Docker image and why do we use Docker images?
+  - A docker image is a set of instructions that will be used to build a Docker container. Creating a Docker image simply means compiling these instructions into a format that can be shared, so that anyone with the image can build the same container, with the same environment. We use Docker images because environment management is incredibly difficult across platforms, and without a tool like Docker, people can not easily run code on their machines.
+- Please explain what is the difference from a Container vs a Virtual Machine?
+  - A container is a lightweight software package that allows you to create a new environment, leveraging the local hardware, but with a different set of packages, dependencies, etc, for the purposes of running software. In contrast, a VM is a partitioned portion of your computer, with dedicated RAM, which completely mimics another machine, including all hardware, OS, etc. They are similar, but VMs are more partitioned, and provide more security, while being a drag on resources.
+- What are 5 examples of container orchestration tools (please list tools)?
+  - Kubernetes is the big one, followed by;
+  - Amazon Elastic Container Service
+  - Red Hat OpenShift Container Platform
+  - Helios
+  - Aptible
+- How does a Docker image differ from a Docker container?
+  - A Docker image is just a set of instructions for building a container. A Docker container is the virtual environment, built from the image, capable of running software, with all dependencies installed.
