@@ -1,22 +1,19 @@
 # stock-predictor
 
+## Docker build
+
+![image](img/docker_build.png)
 ## Curl command
-
-curl \
---header "Content-Type: application/json" \
---request POST \
---data '{"ticker":"MSFT", "days":7}' \
-http://44.203.201.128:8000/predict
-
-## Images
-
-### Curl dommand
 
 ![image](img/curl_command.png)
 
+## Ping command
+
+![image](img/ping.png)
+
 ### GUI command
 
-![image](img/gui_command.png)
+![image](img/gui.png)
 
 ## Canvas Answers
 - How does the Prophet Algorithm differ from an LSTM?
